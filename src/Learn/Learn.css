@@ -1,0 +1,76 @@
+/*.learn {*/
+    /*position: relative;
+    top: 350px;*/
+    /*position: relative;
+    text-align: center;
+    color: white;
+}
+.learn img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.learn div{
+    font-size: 25px;
+    font-weight: 500;
+}
+.learn button{
+    padding: 15px 45px;
+    background: #f96767;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+.learn button:hover{
+    background: #fff;
+}*/
+/* Learn.css */
+
+.learn {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .learn img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .learn .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .learn .text-container div {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .learn .text-container p {
+    font-size: 71px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .learn button {
+    padding: 15px 45px;
+    background: #f96767;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .learn button:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  

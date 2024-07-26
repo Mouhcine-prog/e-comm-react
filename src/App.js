@@ -10,8 +10,8 @@ import Blog from './Pages/Blog';
 import Cloth from './Pages/Cloth';
 import Shop from './Pages/Shop';
 import Pages from './Pages/Pages';
-import Footer from './Footer/Footer';
 import Contact from './Pages/Contact';
+import Learn from './Learn/Learn';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Route path="/pages" element={<Pages />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        <Learn/>
       </BrowserRouter>
     </div>
   );

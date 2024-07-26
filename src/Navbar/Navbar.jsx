@@ -18,58 +18,25 @@ const Navbar = () => {
         </div>
         <div className='links'>
           <ul>
-            <li
-              className={menu === "home" ? "active" : ""}
-              onClick={() => setMenu("home")}
-            >
-              <Link to='/'>Home</Link>
-            </li>
-            <li
-              className={menu === "about" ? "active" : ""}
-              onClick={() => setMenu("about")}
-            >
-              <Link to='/about'>About</Link>
-            </li>
-            <li
-              className={menu === "blog" ? "active" : ""}
-              onClick={() => setMenu("blog")}
-            >
-              <Link to='/blog'>Blog</Link>
-            </li>
-            <li
-              className={menu === "shop" ? "active" : ""}
-              onClick={() => setMenu("shop")}
-            >
-              <Link to='/shop'>Shop</Link>
-            </li>
-            <li
-              className={menu === "cloth" ? "active" : ""}
-              onClick={() => setMenu("cloth")}
-            >
-              <Link to='/cloth'>Cloth</Link>
-            </li>
-            <li
-              className={menu === "pages" ? "active" : ""}
-              onClick={() => setMenu("pages")}
-            >
-              <Link to='/pages'>Pages</Link>
-            </li>
-            <li
-              className={menu === "contact" ? "active" : ""}
-              onClick={() => setMenu("contact")}
-            >
-              <Link to='/contact'>Contact</Link>
-            </li>
+            {['home', 'about', 'blog', 'shop', 'cloth', 'pages', 'contact'].map((item) => (
+              <li
+                key={item}
+                className={menu === item ? "active" : ""}
+                onClick={() => setMenu(item)}
+              >
+                <Link style={{textDecoration:'none'}} to={`/${item === 'home' ? '' : item}`}>{item.charAt(0).toUpperCase() + item.slice(1)}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className='partie2'>
           <FontAwesomeIcon
-            style={{ width: '60px', marginRight: '16px', cursor: 'pointer' }}
+            style={{ width: '60px', marginRight: '16px', cursor: 'pointer',position:'relative',right:'10px' }}
             icon={faMagnifyingGlass}
           />
           <img
             src={cart_icon}
-            style={{ width: '25px', cursor: 'pointer' }}
+            style={{ width: '25px', cursor: 'pointer',position:'relative',right:'10px' }}
             alt='Cart Icon'
           />
           <button>Login</button>

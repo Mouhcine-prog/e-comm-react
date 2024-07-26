@@ -6,6 +6,12 @@
     position: absolute;
     width: 100%;
 }
+.navbar{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
 .navbar .logo{
     display: flex;
     justify-content: center;
@@ -24,7 +30,7 @@
     list-style: none;
     display: flex;
 }
-.links ul li{
+.links ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +44,7 @@
     color: #fff;
     cursor: pointer;
 }
-.links ul li:hover{
+.links ul li a:hover{
     color: #f17373;
     transition: 0.2s;
 }
@@ -46,4 +52,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.partie2 button{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    color: #9b7f7f;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Poppins';
+    border: none;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
 }
