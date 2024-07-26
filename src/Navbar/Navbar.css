@@ -1,0 +1,49 @@
+.navbar header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    width: 100%;
+}
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo p{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 12px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins';
+}
+.links ul{
+    list-style: none;
+    display: flex;
+}
+.links ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 55px;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 35px 0;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+.links ul li:hover{
+    color: #f17373;
+    transition: 0.2s;
+}
+.partie2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
